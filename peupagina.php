@@ -14,7 +14,12 @@
 	 $titolEntrada="Peu de pagina per defecte";
 	 $role="administrator";
 	 $id="peu_pagina_per_defecte";
-	 add_menu_page($titolPagina, $titolEntrada,$role,$id);;
+	 $nom_funcio="nouPeuPagDef";
+	 add_menu_page($titolPagina, $titolEntrada,$role,$id,$nom_funcio);;
+	}
+	
+	function nouPeuPagDef(){
+			include_once('formPeuPag.php');
 	}
 	 add_action('admin_menu','admin_menu_peu_pagina');
 ?>
